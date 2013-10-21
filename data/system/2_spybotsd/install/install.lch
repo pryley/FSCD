@@ -1,0 +1,2 @@
+[Launch]
+ExecuteFile=${cwd}\..\..\..\..\files\system\spybotsd\spybotsd_1.3.exe

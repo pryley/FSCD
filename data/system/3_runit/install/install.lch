@@ -1,0 +1,2 @@
+[Launch]
+ExecuteFile=${cwd}\..\..\..\..\files\system\runit\runit_2.2-b1.exe

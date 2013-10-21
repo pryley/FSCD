@@ -1,0 +1,2 @@
+[Launch]
+ExecuteFile=${cwd}\..\..\..\..\files\system\daemontools\daemontools_3.47.exe

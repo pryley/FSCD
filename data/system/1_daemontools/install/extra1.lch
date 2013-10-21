@@ -1,0 +1,2 @@
+[Launch]
+ExecuteFile=${cwd}\..\..\..\..\files\system\daemontools\awxdtools_1.0.5.exe

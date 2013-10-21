@@ -1,0 +1,2 @@
+[Launch]
+ExecuteFile=${cwd}\..\..\..\..\files\system\scanner\scanner.exe

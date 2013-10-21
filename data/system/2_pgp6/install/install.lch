@@ -1,0 +1,2 @@
+[Launch]
+ExecuteFile=${cwd}\..\..\..\..\files\system\pgp\pgp_6.5.8-ckt08.exe

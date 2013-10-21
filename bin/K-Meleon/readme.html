@@ -1,0 +1,355 @@
+<html>
+<head>
+<title>K-Meleon</title>
+</head>
+<body>
+
+<h1 align=center>K-Meleon 0.8.1 Release Notes</h1>
+
+<p align=left>These release notes outline system requirements, 
+installation instructions, features and known issues for K-Meleon 0.8.1. 
+These release notes were last updated December 12, 2003. 
+K-Meleon 0.8.1 was released on December 13, 2003. 
+The most current version of these release notes are available at 
+<a href="http://kmeleon.sourceforge.net/docs/relnotes081.php">http://kmeleon.sourceforge.net/docs/relnotes081.php</a>.
+</p>
+
+
+<h2>Contents</h2>
+
+<p>
+  <a href="#new">What's New, Improved and Fixed in This Release</a><br />
+  <a href="#system">System Requirements</a><br />
+  <a href="#install">Installation Notes</a><br />
+  <a href="#uninstall">Uninstalling</a><br />
+  <a href="#problems">Known Issues/Problems</a><br />
+  <a href="#about">About K-Meleon</a><br />
+  <a href="#info">More Information</a>
+</p>
+
+
+
+
+
+<h2><a name=new></a>What's New, Improved and Fixed in This Release</h2>
+
+<em>This release primarily contains bug fixes that affected K-Meleon 0.8. 
+The bugs that were fixed are noted below. 
+All other new and improved features are included in K-Meleon 0.8 except where noted.  
+All K-Meleon users are encouraged to upgrade to this release.</em>
+
+<h3>New</h3>
+
+<ul>
+  <li>K-Meleon core</li>
+  <ul>
+    <li>Current Mozilla 1.5 code</li>
+    <li>Bookmarks/Favorites/Hotlist nickname lookup from the URL bar</li>
+    <li>Save individual frame in a frameset</li>
+    <li>Show a context menu for pages with background image</li>
+    <li>Show page info and frame info</li>
+    <li>Support for binding actions to mouse buttons</li>
+    <li>Support for editing preferences using <tt>about:configs</tt></li>
+  </ul>
+  <li>Mouse Gestures plugin (0.8.1) </li>
+  <ul>  
+    <li>A small extension to let you bind commands to simple mouse gestures </li>
+  </ul>
+</ul>
+
+<h3>Improved</h3>       
+
+<ul>
+  <li>K-Meleon core </li>
+  <ul>  
+    <li>File Downloading</li>
+    <li>Browser icons</li>
+    <li>Skin support</li>
+    <li>Tooltip display</li>
+    <li>Non-native dialog display (0.8.1)</li>
+    <li>Updated mfcEmbed core files (0.8.1)</li>
+  </ul>
+
+  <li>Bookmarks plugin </li>
+  <ul>
+    <li>AddLink from context popup menu or macros 'pluginmsg' command</li>
+    <li>Support for Mozilla keywords</li>
+    <li>Support to read and write UTF8 encoded bookmarks. (0.8.1)</li>
+    <li>FindAsYouType</li>
+  </ul>
+
+  <li>Favorites plugin </li>
+  <ul>
+    <li>Support for Internet Explorer Search URL</li>
+  </ul>     
+
+  <li>Fullscreen plugin</li>
+    <ul>
+    <li>Improved fullscreen display</li>
+    <li>Fullscreen at start-up preference added</li>
+  </ul>  
+
+  <li>History plugin </li>
+  <ul>
+    <li>Added global history panel</li>
+    <li>FindAsYouType</li>
+  </ul>
+
+  <li>Hotlist plugin </li>
+    <ul>
+    <li>Support to read and write UTF8 encoded bookmarks. (0.8.1)</li>
+    <li>FindAsYouType</li>
+  </ul>
+
+  <li>Layers Plugin </li>
+  <ul>
+    <li>Basic support for "sessions"</li>
+  </ul>
+
+
+</ul>
+
+
+<h3>Fixed</h3>
+
+<p>
+  The fixes in the 0.8.1 release include:<br />
+<a href="http://kmeleon.sourceforge.net/bugs/viewbug.php?bugid=540">Bug 540</a>: Many plugins only work after loading <tt>about:plugins</tt><br />
+<a href="http://kmeleon.sourceforge.net/bugs/viewbug.php?bugid=543">Bug 543</a>: Popup window is opened in 3 steps instead of 1<br />
+<a href="http://kmeleon.sourceforge.net/bugs/viewbug.php?bugid=548">Bug 548</a>: Certificate dialog missing OK and cancel buttons<br />
+<a href="http://kmeleon.sourceforge.net/bugs/viewbug.php?bugid=550">Bug 550</a>: "<tt>Javascript:</tt>" displays only title bar<br />
+<a href="http://kmeleon.sourceforge.net/bugs/viewbug.php?bugid=550">Bug 551</a>: Browser window not opening to correct size<br />
+<a href="http://kmeleon.sourceforge.net/bugs/viewbug.php?bugid=556">Bug 556</a>: Cookie accept dialog out of sight and/or window size to minimum<br />
+<a href="http://kmeleon.sourceforge.net/bugs/viewbug.php?bugid=576">Bug 576</a>: Wrong icon in tooldead.bmp</a>
+</p>
+
+<p>Specific bug information is available in the <a href="http://kmeleon.sourceforge.net/bugs/">Bug Reporting System</a>.
+</p>
+
+
+<h2><a name="system">System Requirements</a></h2>
+
+<ul>
+  <li>Windows 95, 98, 98SE, ME, Windows NT 4.0, Windows 2000, Windows XP and Windows 2003 Server.</li>
+  <li>32 MB RAM minimum recommended.</li>
+  <li>5 MB of free hard drive space for download. 11 MB of free hard disk space for full installation.</li>
+</ul>
+
+<h3>Windows DLLs</h3>
+
+<p>
+  The dlls shipped with Windows are improved and enhanced with each version. Users of older Windows versions, Windows 95/98 and Windows NT, may have to update some dlls to run K-Meleon. If you experience problems with menus and plugins not displaying, please download the following update:
+</p>
+
+<ul>
+  <li><tt>Vcredist.exe</tt></li>
+      <ul>
+        <li>To obtain this update, download <tt>VC6RedistSetup.exe</tt> <a href="http://support.microsoft.com/?kbid=259403">here</a>. When you run <tt>VC6RedistSetup.exe</tt>, it will install <tt>Vcredist.exe</tt> into a directory that you specify. Browse to that directory and run <tt>Vcredist.exe</tt> to install the appropriate updates.</li>
+        <li>Users on WindowsME and Windows 2000 should go to the <a href="http://windowsupdate.microsoft.com">Windows Update</a> web site to download the appropriate updates.</a></li>
+      </ul>
+</ul>
+
+
+<h2><a name="install">Installation Notes</a></h2>
+
+<ol>
+  <li>If you have previously installed K-Meleon, make sure to uninstall any previous versions before continuing the installation for this version. Uninstalling the previous version will remove all of the configuration and preference files. If you wish to save these files to use with K-Meleon 0.8.1, please make a copy of all of the directories under "K-Meleon\Profiles" and save them outside the K-Meleon installation directory before uninstalling K-Meleon.</li>
+  <li>It is recommended that you exit all programs before running the Setup program.</li>
+  <li>Double-click on the <strong>kmeleon081.exe</strong> file to start the <strong>Setup</strong> process. At any time in the process that you need to stop the K-Meleon installation, click on the <strong>Cancel</strong> button.</li>
+  <li>Follow the on-screen instructions in the Setup program. Avoid installing K-Meleon 0.8.1 in the same directory as an older version. When completed, you will be given the option of letting K-Meleon start automatically.</li>
+  <li>If you wish to use your old configuration and preference files with K-Meleon 0.8.1, please review the details on <a href="http://kmeleon.sourceforge.net/docs/migratingprofiles.php">Migrating Profiles</a>.</li>
+</ol>
+
+
+
+<h3>JavaScript</h3>
+    <ul>
+      <li> K-Meleon has built-in support to run ECMAScript (a.k.a JavaScript). </li>
+    </ul>
+
+<h3>Java applets</h3>
+
+<ul>
+      <li>You must first install the Java Runtime Environment (JRE) to run
+          Java applets in K-Meleon. Once installed, K-Meleon automatically
+          detects your JRE installation and no other configuration is
+          necessary.
+      </li>
+      <li>K-Meleon has been tested with JRE 1.4. You can download JRE 1.4 from 
+          <a href="http://java.sun.com/j2se/1.4/download.html">http://java.sun.com/j2se/1.4/download.html</a>.
+          To see if JRE is properly installed, type <strong>about:plugins</strong> 
+          in the URL bar. If you see <strong>Java Plug-in</strong> listed,
+          K-Meleon properly recognizes the JRE.
+      </li>
+</ul>
+
+<h3>Internationalization/Multi-Language Support</h3>
+
+<ul>
+  <li>Translated menus and toolbar configuration files are available in the K-Meleon <a href="http://kmeleon.sourceforge.net/resources.php">Resource</a> area.
+  </li>
+</ul>
+
+<h2><a name="uninstall">Uninstalling</a></h2>
+
+<ol>
+  <li>Go to <strong>Settings</strong> - <strong>Control Panel</strong> - <strong>Add/Remove Programs</strong>.</li>
+  <li>Select <strong>K-Meleon (remove only).</strong></li>
+  <li>Click on the <strong>Add/Remove</strong> or <strong>Change/Remove</strong> button.</li>
+  <li>Click on the <strong>Uninstall</strong> button.</li>
+  <li>The K-Meleon <strong>Uninstall</strong> program will prompt you with a confirmation before uninstalling K-Meleon</li>
+  <li>Click on the <strong>Finish</strong> button to close out the uninstall program when it is completed.</li>
+</ol>
+
+
+<h2><a name="problems">Known Issues/Problems</a></h2>
+
+<h3>General</h3>
+
+<ul>
+  <li>Error messages related to <tt>MFC42.dll</tt> on Windows 95/98 or Windows NT are caused by an outdated or missing <tt>MFC42.dll</tt>. Please download the following update:</li>
+
+<ul>
+  <li><tt>Vcredist.exe</tt></li>
+      <ul>
+        <li>To obtain this update, download <tt>VC6RedistSetup.exe</tt> <a href="http://support.microsoft.com/?kbid=259403">here</a>. When you run <tt>VC6RedistSetup.exe</tt>, it will install <tt>Vcredist.exe</tt> into a directory that you specify. Browse to that directory and run <tt>Vcredist.exe</tt> to install the appropriate updates.</li>
+        <li>Users on WindowsME and Windows 2000 should go to the <a href="http://windowsupdate.microsoft.com">Windows Update</a> web site to download the appropriate updates.</a></li>
+      </ul>
+</ul>
+</li>
+
+
+  <li>
+    If you save more than one password from the same site, the password manager will not autoload any of the passwords.
+  </li>
+  <li>
+    SSL support allows you to browse to SSL sites. However, if you try to view "Help", you will get an error message.
+  </li>
+
+  <li>
+    When viewing web page source from dynamically generated pages, the current source may not match the displayed page.
+  </li>
+</ul>
+
+<h3>Browser Display</h3>
+
+<ul>
+  <li>Text and bookmarks menus don't display on Windows95/98 or Windows NT unless the <tt>Vcredist.exe</tt> update is installed. Please download and install this update:
+
+<ul>
+  <li><tt>Vcredist.exe</tt></li>
+      <ul>
+        <li>To obtain this update, download <tt>VC6RedistSetup.exe</tt> <a href="http://support.microsoft.com/?kbid=259403">here</a>. When you run <tt>VC6RedistSetup.exe</tt>, it will install <tt>Vcredist.exe</tt> into a directory that you specify. Browse to that directory and run <tt>Vcredist.exe</tt> to install the appropriate updates.</li>
+        <li>Users on WindowsME and Windows 2000 should go to the <a href="http://windowsupdate.microsoft.com">Windows Update</a> web site to download the appropriate updates.</a></li>
+      </ul>
+</ul>
+</li>
+
+
+  <li>The Alt + accelerator (F, E, V, G, H) won't work with the menu bar menus if the <strong>rebar menu</strong> plugin is enabled. Disable the rebar menu to use the Alt + accelerator key combinations. See <a href="http://kmeleon.sourceforge.net/docs/faq.php#plugins2">How do I enable or disable a K-Meleon plugin?</a> for more details.</li>
+
+  <li>The menus don't display properly when you are using the Silver theme in Windows XP together with the bitmapped menus plugin from K-Meleon. The current workaround is to disable the Bitmapped menus plugin.  </li>
+
+  <li>Colors don't display properly when monitor resolution is set to 256 colors since Mozilla/Gecko does not provide proper support for 256 colors. See 
+      <a href="http://bugzilla.mozilla.org/show_bug.cgi?id=88560">Mozilla Bug #88560</a></li>
+
+  <li>A site not displaying properly is normally caused by one of two
+      issues:
+      <ol>
+        <li>The site is not compliant with current HTML standards.
+        <li>The display problem is due to a Mozilla/Gecko bug.
+      </ol>
+</ul>
+
+<h3>Mouse wheel scrolling\Multiple mouse buttons</h3>
+
+<ul>
+  <li>The Mouse Gesture support offered by the new plugin is very limited. Users in need of more advanced gestures are adviced to use a third-party program, such as <a href="http://www.tcbmi.com/strokeit/">StrokeIt</a>.</li>
+
+  <li>Mouse wheel scrolling does not work with all drivers. If you have problems, try updating your driver or disabling any "helper" programs that your mouse uses. </li>
+
+  <li>K-Meleon may not recognize secondary control buttons on mice with multiple buttons. If your mouse software permits programming, you may want to try binding those buttons to the respective keyboard commands that K-Meleon uses for navigation. </li>
+</ul>
+
+<h3>Third party Plug-ins</h3>
+
+<ul>
+  <li>Most Mozilla-compatible plugins work with K-Meleon. If you
+      already have Mozilla-compatible plugins installed, K-Meleon will
+      detect and use a number of these plugins. You can download
+      Mozilla/Netscape-compatible plugins from Netscape here: 
+      <a href="http://home.netscape.com/plugins/">http://home.netscape.com/plugins/</a>
+  </li>
+  <li>The most current versions of Flash Player and Shockwave Player support K-Meleon 0.8.1. To check to see if these are installed properly, visit Shockwave's <a href="http://www.macromedia.com/shockwave/welcome/">test site</a>. When installing either program if you are asked for the location of the plugins directory, use the following location: <br /> <strong>\Program Files\K-Meleon\plugins</strong> 
+  </li>
+</ul>
+
+<h3>Proxies</h3>
+
+<ul>
+  <li>K-Meleon can be configured to work properly with proxies such as Junkbuster that do not support the most recent HTTP specification. By default, K-Meleon tries to use HTTP 1.1. To use K-Meleon with a proxy that only supports HTTP 1.0, change the HTTP version under <strong>Edit</strong> - <strong>Preferences</strong> - <strong>General</strong>. </li>
+  <li>K-Meleon only accepts hostnames for manual proxies. </li>
+</ul>
+
+<h2><a name=about>About K-Meleon</a></h2>
+
+<p>K-Meleon 0.8.1 is released under the <a href="http://www.gnu.org/">GNU</a> <a href="http://www.gnu.org/licenses/licenses.html#TOCGPL">General Public License</a>. K-Meleon uses the Gecko rendering engine developed for Mozilla which provides excellent support for current HTML, CSS and DOM standards. This version contains portions of <a href="http://www.mozilla.org/">Mozilla</a> 1.5.</p>
+
+<h3>The K-Meleon Team</h3>
+
+<p>
+  <strong>Core Developers</strong><br />
+  <a href="mailto:jeff@tcbmi.com">Jeff Doozan</a><br />
+  <a href="mailto:ulferikson@fastmail.fm">Ulf Erikson</a>
+</p>
+
+<p>
+  <strong>Patches and Bug Fixes</strong><br />
+  Vernon Brooks<br />
+  Jordan Callicoat
+</p>
+
+<p>
+  <strong>Project Documentation</strong><br />
+  <a href="mailto:amutch@tln.lib.mi.us">Andrew Mutch</a>
+</p>
+
+<p>
+  <strong>Past Contributors</strong><br />
+  <a href="mailto:binaryc@teamreaction.com">Brian Harris</a><br />
+  Rob Johnson<br />
+  Mark Liffiton<br />
+  Chak Nanga<br />
+  <a href="mailto:sebastian@sspaeth.de">Sebastian Spaeth</a><br />
+  <a href="mailto:christophe@nullsoft.com">Christophe Thibault</a>
+</p>
+
+<h3>Thanks</h3>
+
+<p>
+  K-Meleon uses some bits from:<br />
+  <a href="http://nsis.sourceforge.net/">NSIS Installer</a> (c) 2003
+  <a href="http://www.nullsoft.com/">Nullsoft</a><br />
+  Gecko and System Icon from <a href="http://www.mozilla.org/">Mozilla</a><br />
+  Project hosting: <a href="http://www.sourceforge.net/">SourceForge</a>
+</p>
+
+
+<h2><a name="info">More Information</a></h2>
+
+<p>
+  K-Meleon provides a number of resources to support your use of K-Meleon:
+</p>
+
+<ul>
+  <li>Additional information and documentation: <a href="http://kmeleon.sourceforge.net/">http://kmeleon.sourceforge.net/</a></li>
+  <li>For support and place enhancement requests: <a href="http://kmeleon.sourceforge.net/forum/">http://kmeleon.sourceforge.net/forum/</a></li>
+  <li>To report bugs after you have asked in the Forums: <a href="http://kmeleon.sourceforge.net/bugs/">http://kmeleon.sourceforge.net/bugs/</a></li>
+  <li>Resources including translated menus, alternate toolbars and other goodies: <a href="http://kmeleon.sourceforge.net/resources.php">http://kmeleon.sourceforge.net/resources.php</a></li>
+  <li>Developers mailing list: <a href="mailto:kmeleon-dev@lists.sourceforge.net">kmeleon-dev@lists.sourceforge.net</a></li>
+</ul>
+
+<p>
+
+</body>
+</html>
